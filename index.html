@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>AlloyFL</title>
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <h1> AlloyFL</h1>
+        <h2><b>AlloyFL</b> is a fault localization tool for Alloy.</h2>
+      </div>
+    </section>
+	
+	<section>
+      <div class="usefullinks">
+        <h3 class="subheader">AlloyFL Information</h3>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+          </tr>		  
+		  <tr>
+            <td>
+			 <a href="https://github.com/AlloyFL/AlloyFL">Tool</a>
+	</td>
+            <td>
+              Latest stable release of AlloyFL which is a self-executable JAR file.
+            </td>
+          </tr>
+		  <tr>
+            <td>
+			 <a href="https://github.com/AlloyFL/AlloyFLCode">Source Code</a>
+	</td>
+            <td>
+              Open source code base for the latest release. Includes a collection of faulty models which can be used to explore AlloyFL.
+            </td>
+          </tr>
+		  		   <tr>
+		   <td>
+   Requirements
+	</td>
+            <td>
+			AlloyFL has the following requirements for execution:
+              <ul>
+			  <li><b>Supported Operating Systems:</b> Linux (64 bit) and Mac OS X (64 bit). </li>
+			  <li><b>Java 8:</b> Must be installed and accessible from PATH. </li>
+			  <li><b>SAT Solver:</b> AlloyFL was built to work with minisat and the unsat core.</li>
+            </td>
+		  </tr>
+		  <tr>
+		   <td>
+   <a href="https://ieeexplore.ieee.org/document/9251074">Paper</a>
+	</td>
+            <td>
+              AlloyFL is an open source implementation of the ISSRE 2020 Paper "Fault Localization for Declarative Models in Alloy" by K. Wang, A.Sullivan, D. Marinov, and S. Khurshid.
+            </td>
+		  </tr>
+
+		  
+
+        </table>
+      </div>
+    </section>
+   
+    <section>
+      <div class="usefullinks">
+        <h3 class="subheader">Related Software</h3>
+        <table>
+          <tr>
+            <th>Tool</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>
+    <a href="https://github.com/AlloyTools/org.alloytools.alloy/releases">Alloy Analyzer v.5.1.0</a>
+	</td>
+            <td>
+              <b>Alloy 5</b> is a self-contained executable, which includes the Kodkod model finder and a variety of SAT solvers, as well as the standard Alloy library and a collection of tutorial examples. The same jar file can be incorporated into other applications to use Alloy as an API and includes the source code. See the release notes for details of new features. <i>The Analyzer is Alloy's IDE and the base for AlloyFL.</i>
+            </td>
+          </tr>
+		  
+		  <tr>
+            <td>
+    <a href="https://sites.google.com/view/aunitanalyzer">AUnit Analyzer</a>
+	</td>
+            <td>
+              <b>AUnit Analyzer</b> is an extension to the Alloy Analyzer which provides support for AUnit. AUnit is a testing framework designed for the Alloy language. AUnit establishes the definition of a test case, test execution, and coverage requirements in the context of Alloy and its declarative execution environment. <i>AlloyFL is an extension to the AUnit Analyzer which is built off of Alloy 5's open source toolset.</i>
+            </td>
+          </tr>
+		  
+		  <tr>
+            <td>
+    <a href="https://github.com/kaiyuanw/MuAlloy">MuAlloy</a>
+	</td>
+            <td>
+              <b>MuAlloy</b> is a command line tool built on top of Alloy4.2. The tool provides basic features to mutate an Alloy model at its AST level and generate non-equivalent mutant models. For each non-equivalent mutant model, MuAlloy is able to generate an Alloy instance that kills it. All mutant killing instances can be encoded as AUnit tests and saved on the disk. MuAlloy can also run mutation testing on any model given some tests. <i>AlloyFL utilizes MuAlloy as part of its fault localization process.</i>
+            </td>
+          </tr>
+		  		
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
